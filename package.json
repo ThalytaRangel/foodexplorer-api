@@ -1,0 +1,20 @@
+{
+  "name": "api-foodexplorer",
+  "version": "1.0.0",
+  "description": "API desenvolvida para o desafio final do programa Explorer ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Thalyta Ornelas Rangel Rosemberg",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
