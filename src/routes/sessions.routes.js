@@ -8,5 +8,4 @@ const sessionsController = new SessionsController();
 
 sessionsRoutes.post("/", sessionsController.create);
 
-
 module.exports = sessionsRoutes;
