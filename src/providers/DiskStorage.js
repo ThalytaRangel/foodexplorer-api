@@ -15,6 +15,7 @@ class DiskStorage {
     const filePath = path.resolve(uploadsConfig.UPLOADS_FOLDER, file);
     try {
       await fs.promises.stat(filePath);
+      
     }catch {
       return
     }
