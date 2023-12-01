@@ -4,7 +4,7 @@ const { hash, compare } = require("bcryptjs");
 
 class UsersController {
   async create(request, response) {
-    const { name, email, password } = request.body;
+    const { name, email, password, admin } = request.body;
 
     const checkUserExists = await knex("users").where({ email }).first();
 
@@ -18,6 +18,7 @@ class UsersController {
       name,
       email,
       password: hashedPassword,
+      admin,
     });
 
     if (!name) {
@@ -28,7 +29,7 @@ class UsersController {
   }
 
   async update(request, response) {
-    const { name, email, password, old_password } = request.body;
+    const { name, email, password, old_password, admin } = request.body;
 
     const user_id = request.user.id;
 
@@ -60,12 +61,14 @@ class UsersController {
 
     user.name = name ?? user.name;
     user.email = email ?? user.email;
+    user.admin = admin ?? user.admin;
 
     await knex("users")
       .update({
         name: user.name,
         email: user.email,
         password: user.password,
+        admin: user.admin,
         updated_at: knex.fn.now(),
       })
       .where({ id: user_id });
