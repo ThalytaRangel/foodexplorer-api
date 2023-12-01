@@ -6,7 +6,7 @@ Backend realizado como parte do desafio final do curso explorer da Rocketseat. A
 
 - Veja o link do deploy [aqui](link-do-deploy).
 
-## Stack utilizada
+## Stack utilizada 🛠
 
 **Back-end:**
 
@@ -18,10 +18,10 @@ Backend realizado como parte do desafio final do curso explorer da Rocketseat. A
 - Multer
 - JWT
 
-## Layout
+## Database Diagram
 
 <img src="https://i.ibb.co/wQQg4xQ/Captura-de-tela-2023-12-01-174531.png" alt="Imagem do Banco de Dados">
 
-## Autores
+## Autores 👩‍💻
 
 - [Thalyta Rangel](https://github.com/ThalytaRangel)
