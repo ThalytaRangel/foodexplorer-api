@@ -83,22 +83,23 @@ class DishesController {
     dish.category_id = category_id ?? dish.category_id;
     dish.price = price ?? dish.price;
 
-    const ingredientsList = ingredients.map((ingredient) => {
-      return {
-        dish_id: id,
-        name: ingredient,
-      };
-    });
-
+    
     await knex("dishes").where({ id }).update({
       name: dish.name,
       price: dish.price,
       description: dish.description,
       category_id: dish.category_id,
     });
+    
+    await knex("dish_ingredients").where({ dish_id: id }).delete(); 
 
-    await knex("dish_ingredients").where({ dish_id: id }).delete();
-
+    const ingredientsList = ingredients.map((ingredient) => {
+      return {
+        dish_id: id,
+        name: ingredient,
+      };
+    });    
+    
     await knex("dish_ingredients").insert(ingredientsList);
 
     return response.json("Informações do prato atualizadas com sucesso!");
