@@ -6,7 +6,7 @@ exports.up = (knex) =>
     table.float("price").notNullable();
     table.text("image").default(null);
 
-    table.integer("category_id").references("id").inTable("dish_categories").onDelete("CASCADE");
+    table.integer("category_id");
 
     table.timestamp("created_at").default(knex.fn.now());
     table.timestamp("updated_at").default(knex.fn.now());
