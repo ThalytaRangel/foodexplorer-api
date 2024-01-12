@@ -37,9 +37,9 @@ class FavoritesController {
   async delete(request, response) {
     const {id} = request.params;
 
-    await knex("favorites_dishes").where({dish_id: id}).delete();
+    await knex("favorites_dishes").where({dish_id: id, user_id: request.user.id }).delete();
 
-    return response.json("O prato foi retirado dos sus favoritos");
+    return response.json("O prato foi retirado dos seus favoritos");
   }
 }
 
