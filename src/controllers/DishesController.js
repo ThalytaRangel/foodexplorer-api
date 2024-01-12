@@ -9,16 +9,18 @@ class DishesController {
 
     const [dish_id] = await knex("dishes").insert(newDish);
 
-    const ingredientsInsert = ingredients.map((ingredient) => {
+    const ingredientsInsert = ingredients?.map((ingredient) => {
       return {
         dish_id,
         name: ingredient,
       };
     });
+   
+    if (ingredientsInsert?.length > 0) {
+      await knex("dish_ingredients").insert(ingredientsInsert);
+    }
 
-    await knex("dish_ingredients").insert(ingredientsInsert);
-
-    return response.status(201).json({ message: "Prato cadastrado com sucesso!" });
+    return response.status(201).json({ dish_id, message: "Prato cadastrado com sucesso!" });
   }
 
   async show(request, response) {
@@ -93,14 +95,16 @@ class DishesController {
     
     await knex("dish_ingredients").where({ dish_id: id }).delete(); 
 
-    const ingredientsList = ingredients.map((ingredient) => {
+    const ingredientsList = ingredients?.map((ingredient) => {
       return {
         dish_id: id,
         name: ingredient,
       };
     });    
     
-    await knex("dish_ingredients").insert(ingredientsList);
+    if (ingredientsList?.length > 0) {
+      await knex("dish_ingredients").insert(ingredientsList);
+    }
 
     return response.json("Informações do prato atualizadas com sucesso!");
   }
