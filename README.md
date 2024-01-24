@@ -25,7 +25,7 @@ API desenvolvivida para compor o backend do desafio final do curso Explorer - De
 
 ## 📁 Projeto
 
-Projeto realizado como parte do desafio final do curso Explorer da [@Rockeseat](https://www.rocketseat.com.br/). <br>
+Projeto realizado como parte do desafio final do curso Explorer da [Rockeseat](https://www.rocketseat.com.br/). <br>
 A proposta é o desenvolvimento de uma aplicação de ponta a ponta com front-end e back-end simulando um restaurante fictício e seu cardápio digital. <br>
 Esse projeto será revisado pelos instrutores da instituição afim de avaliar os conhecimentos adquiridos bem como suas utilizações no desenvolvimento dessa aplicação. Servindo assim como um trabalho de conclusão necessário para a avaliação e certificação do curso de Desenvolvedor FullStack.
 Este é o back-end da aplicação que lida com a lógica e o armazenamento dos dados desse restaurante fictício.
@@ -36,7 +36,7 @@ Essa api será consumida pelo frontend da aplicação que está disponível no s
 
 #### 🚀 Deploy Frontend
 
-Para acessar a interface do usuário, basta acesssar [aqui](https://.netlify.app).
+Para acessar a interface do usuário, basta acesssar [aqui](https://thalytafoodexplorer.netlify.app/).
 Você pode utilizar os perfis de usuários mencionados na sessão Perfis do README do repositório Frontend ou criar seu próprio login de acesso.
 
 ## Estrutura
@@ -80,7 +80,7 @@ O projeto conta com as seguintes tabelas:
 
 ## 🛠️ Instalação
 
-Para acessar a hospedagem do backend basta conferir o link a seguir: https://.onrender.com. <br>
+Se quiser acessar a hospedagem do backend basta utilizar a url a seguir: https://thalyta-foodexplorer-api.onrender.com <br>
 
 ⚠️ É importante ressaltar que o backend está hospedado em um serviço gratuito e portanto, pode ocorrer lentidão ao realizar o acesso.
 
