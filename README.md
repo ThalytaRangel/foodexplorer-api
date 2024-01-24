@@ -145,12 +145,14 @@ Este projeto está sob a licença MIT.
 
 ## ☎️ Contato
 
-<div style="display: flex;">
-  <a href="https://www.linkedin.com/in/thalytarangel/" target="_blank">
-  <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="margin-right: 2vw" target="_blank"></a>
-  <a href="mailto:thalyta_ornelas@hotmail.com">
-  <img  alt="Outlook" src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" style="margin-right: 2vw" target="_blank"/>
-  </a> 
-  <a href="https://discord.com/users/thalytarangel" target="_blank">
-  <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" style="margin-right: 2vw" target="_blank"></a>
+<div style="display: flex;" >
+<a href="https://www.linkedin.com/in/thalytarangel/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="margin-right: 2vw" target="_blank"></a>
+<br/><br/>
+<a href="mailto:thalyta_ornelas@hotmail.com">
+<img  alt="Outlook" src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" style="margin-right: 2vw" target="_blank"/>
+</a>
+<br/><br/>
+<a href="https://discord.com/users/thalytarangel" target="_blank">
+<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" style="margin-right: 2vw" target="_blank">
+</a>
 </div>
